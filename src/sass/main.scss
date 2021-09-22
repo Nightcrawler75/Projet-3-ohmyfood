@@ -1,26 +1,6 @@
+@use "./variables" as *;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
 
-$let:"Shrikhand";
-$texte:"Roboto";
-$primaire: #9356DC;
-$secondaire:#FF79DA;
-$tertiaire:#99E2D0;
-$stone:#E9EAEA;
-$fair:#F6F6F6;
-
-// @font-face {
-//     font-family: $let;
-//      src: url('font/shrikhand/Shrikhand-Regular.otf') format("opentype");
-// }
-// @font-face {
-//     font-family: $texte ,sans-serif;
-//     src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap%27');
-// }
-// @font-face {
-//     font-family: $texte;
-//     src: url('font/roboto/Roboto-Regular.ttf'), 
-//             url('font/roboto/Roboto-Light.ttf') format("opentype");
-// }
 
 body,html{
     padding: 0;
