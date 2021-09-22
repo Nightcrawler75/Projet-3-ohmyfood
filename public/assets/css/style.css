@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  font-family: "Roboto";
+}
+header .header__sub-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2em;
+  background-color: #F6F6F6;
+}
+header .header__sub-search h1.header__heading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+header .header__sub-search p.header__quote {
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 200;
+  color: #747575;
+}
+header .header__sub-search .header__btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo {
+  height: 1.75em;
+  padding: 1.5em 0 0.5em 6em;
+  margin-top: 1.5em;
+}
+
+.header__search-bar {
+  display: flex;
+  justify-content: center;
+  background-color: #E9EAEA;
+  background: linear-gradient(to bottom, #CDCECE, #E9EAEA 10%);
+  padding: 0.5em 0;
+}
+.header__search-bar .header__search-bar--input {
+  outline: none;
+  border-color: transparent;
+  background-color: unset;
+  margin-left: 1em;
+  font-family: "Roboto";
+}
+
+::placeholder {
+  color: black;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input:focus {
+  animation-name: blink;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+}
+
+h1.header__heading {
+  margin: 1.75em 0 0 0;
+  font-size: 1.5em;
+  padding: 0 1em;
+}
+
+.header__btn {
+  border-radius: 25em;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  color: #FFFFFF;
+  padding: 1em;
+  margin: 1em 0 3.5em 0;
+}
+
+.operation {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1em;
+}
+.operation .operation__heading {
+  font-family: "Roboto";
+  font-size: 1.5em;
+}
+.operation .operation__card {
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: #F6F6F6;
+  margin: 0.25em 0;
+  border: solid 2px;
+}
+.operation .operation__card--num {
+  border-radius: 50%;
+  background-color: #FF79DA;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */

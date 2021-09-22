@@ -1,0 +1,11 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 OC",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./src/sass/main.scss:public/assets/css/style.css"
+  },
+  "author": "Nightcrawler75",
+  "license": "ISC"
+}
