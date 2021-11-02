@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.header__items {
+  display: flex;
+  margin-top: 1em;
+}
+.header__items .header__logo__img {
+  width: 40%;
+  margin-bottom: 1em;
+}
+.header__items .fa-arrow-left {
+  display: flex;
+  align-self: flex-start;
+  margin-right: 5em;
+  padding-left: 1em;
+  padding-top: 0.25em;
+}
+
+.image {
+  width: 100%;
+  height: 187px;
+  background-color: #FF79DA;
+}
+
+.header__items__img {
+  width: 100%;
+  height: 187px;
+  object-fit: contain;
+}
+
+h2 {
+  font-family: "Shrikhand";
+}
+
+.menu {
+  width: max-content, auto;
+  padding: 0 1em;
+  background-color: #E9EAEA;
+  border-radius: 25px 25px 0 0;
+  margin-top: -1em;
+}
+.menu .menu__heading {
+  display: flex;
+  align-items: center;
+}
+.menu .menu__heading .fa-heart {
+  display: flex;
+  padding-left: 9em;
+  flex-grow: 1;
+  align-items: stretch;
+  color: #E9EAEA;
+  -webkit-text-stroke: 1px black;
+}
+.menu .menu__heading .fa-heart:hover {
+  background: linear-gradient(175deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px transparent;
+}
+
+/*# sourceMappingURL=menu1.css.map */

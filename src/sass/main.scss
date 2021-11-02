@@ -1,4 +1,5 @@
-@use "./variables" as *;
+
+@import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
 
 
@@ -23,7 +24,7 @@ header{
                     text-align: center;
                     font-family: $texte;
                     font-weight:200;
-                    color:#747575;
+                    color:$fas;
                 }
                 .header__btn-container{
                     display: flex;
@@ -76,6 +77,7 @@ h1.header__heading{
     color: #FFFFFF;
     padding: 1em;
     margin: 1em 0 3.5em 0;
+    cursor: pointer;
 }
 
 .operation{
@@ -89,17 +91,170 @@ h1.header__heading{
         font-size: 1.5em;
     }
     .operation__card{
+        position: relative;
+        animation: fadein 2s;
         height: 75px;
         display: flex;
-        justify-content: center;
+        align-items:center;
+        text-align: start;
         border-radius: 25px;
         background-color: $fair;
-        margin: 0.25em 0;
-        border:solid 2px;
-    }
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 0.75em 0;
+        cursor: pointer;
         .operation__card--num{
+            display: flex;
+            text-align: center;
+            align-items:center;
+            justify-content: center;
+            width: 1em;
+            font-size: 15px;
+            margin: 0 2em 0 -0.5em;
+            padding: 0.20em;
             border-radius: 50%;
-            background-color: $secondaire;
-            color: #FFFFFF;
-        }  
+            background-color:$primaire;
+            color: #FFFFFF;   
+        } 
+        .fas{
+            color:$fas;
+        }
+        .operation__card__quote{
+            display: flex;
+            margin-left: 2.5em;
+        }
+
+    } 
+    @keyframes fadein {
+        from {
+            top: 50px;
+            opacity:0;   
+        }
+        to {
+            top:0px;
+            opacity:1;   
+        }
+    }  
 }
+.operation__card:hover{
+    background-color: #F6EDFF;
+    .fas{
+        color: $primaire;
+    }
+}
+.restaurants{
+    font-family: $texte;
+    background-color: $fair;
+    padding-top: 2em;
+    margin-top: 3em;
+    .restaurants__heading{
+        margin: 1em 0 0 0.70em;
+        font-size: 1.5em;
+    }
+    .restaurants__cards{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        margin: 1.25em 1.25em ;
+        background-color: #FFFFFF;
+        width: 335px;
+        height: 250px;
+        cursor: pointer;
+    }
+        .restaurants__cards__pic{
+            border-radius: 15px 15px 0 0;
+            height: 174px;
+            width: 335px;
+            object-fit: cover;
+        }
+        .restaurants__cards__container{
+            border-radius: 0 0 15px 15px;
+            display:flex;
+            height: 70px;
+            .restaurants__cards__container--heading{
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                width: 50%;
+                padding: 1em 0 0 1em;
+                font-weight:lighter; 
+            }
+            .restaurants__cards__container__pic-sticker{
+                position:relative;
+                bottom:165px;
+                left: 55px;
+                color:#038765 ;
+                background-color: #98E2CF;
+                font-size:small;
+                font-weight:600;
+                height: 29px;
+                width: 81px;
+                border-radius: 2px;
+                display: flex;
+                text-align: center;
+                align-items:center;
+                justify-content: center;
+            }
+            i{
+                flex-grow: 1;
+                text-align: right;
+                align-items: stretch;
+                font-size: x-large;                
+                padding: 0.70em 1em 0 0;  
+                color: #FFFFFF; 
+                -webkit-text-stroke: 1px black;
+                
+            }  
+            i:hover{
+                background:linear-gradient(175deg, $primaire, $secondaire  ) ;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke: 1px transparent;
+                
+            } 
+        }      
+}
+
+footer{ 
+    background-color: #353535;
+    color: #FFFFFF;
+    font-family: $texte;
+    padding: 1.5em 0 1.5em 1.5em ; 
+    margin-top: 4em;  
+    .logo-bis{
+        font-style: italic;
+        font-weight: bold;
+        font-family: $let;
+        font-size: large;
+        margin-bottom: 1em;
+    }
+    .footer__options{
+        color: white;
+        margin: 0 0 0.5em 0;
+        cursor: pointer;
+        p{
+            margin: 0;
+            
+        }
+
+        .fa-utensils{
+            margin-right: 10px;
+        }
+        .fa-hands-helping{
+            margin-right: 4px;
+        }
+        
+    }
+    .footer__contact{
+        display:flex;
+        flex-direction: column;
+        color: #FFFFFF;
+        margin-bottom: 0;
+        margin: 0 0 1.25em 0;
+        p{
+            margin: 0 0 0.5em 0;
+            cursor: pointer;
+        }
+    }
+}
+
+
