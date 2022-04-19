@@ -135,6 +135,7 @@ h2 {
   display: flex;
   position: relative;
   animation: fadein 5s;
+  overflow: hidden;
   text-align: start;
   border-radius: 15px;
   background-color: #FFFFFF;
@@ -246,6 +247,115 @@ footer .footer__contact {
 footer .footer__contact p {
   margin: 0 0 0.5em 0;
   cursor: pointer;
+}
+
+@media (min-width: 1250px) {
+  .header__items {
+    display: flex;
+    justify-content: center;
+  }
+  .header__items .fa-arrow-left {
+    display: none;
+  }
+
+  main .header__items {
+    display: flex;
+    justify-content: center;
+  }
+  main .image {
+    height: 33em;
+    background-size: cover;
+    background-position: center;
+  }
+  main .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  main .menu .menu__heading {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    width: 70em;
+    align-self: center;
+  }
+  main .menu .menu__heading .fa-heart {
+    padding-right: 0;
+  }
+  main .menu .menu__sub-title {
+    margin: 0;
+  }
+  main .menu .order__btn__container {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  main .menu__orders {
+    display: flex;
+    justify-content: center;
+    padding-top: 4em;
+  }
+  main .menu__orders .orders {
+    margin: 0 1em 0 1em;
+  }
+  main .menu__orders .orders .menu__cards {
+    width: 350px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  footer .logo-bis {
+    position: absolute;
+    left: 5em;
+  }
+  footer .footer__contact {
+    margin-left: 2em;
+  }
+}
+@media (min-width: 767px) {
+  .header__items {
+    display: flex;
+  }
+  .header__items .fa-arrow-left {
+    display: flex;
+    align-self: flex-start;
+    font-size: 2em;
+  }
+
+  main .header__items {
+    display: flex;
+    justify-content: center;
+  }
+  main .image {
+    height: 33em;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .menu {
+    padding: 0 10em;
+  }
+  .menu .order__btn__container {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  footer {
+    margin-bottom: 18em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  footer .logo-bis {
+    position: absolute;
+    left: 1.5em;
+  }
+  footer .footer__contact {
+    margin-left: 2em;
+  }
 }
 
 /*# sourceMappingURL=menu1.css.map */

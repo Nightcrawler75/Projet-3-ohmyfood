@@ -133,6 +133,7 @@ h2{
         display: flex;
         position: relative;
         animation: fadein 5s;
+        overflow: hidden;
         text-align: start;
         border-radius: 15px;
         background-color:#FFFFFF;
@@ -259,3 +260,118 @@ footer{
         }
     }
 } 
+
+@media (min-width: 1250px) {
+    .header__items{
+        display: flex;
+        justify-content: center;
+        .fa-arrow-left{
+            display:none;
+        }
+    }
+    main{
+        .header__items{
+            display: flex;
+            justify-content: center;
+        }
+        .image{
+            // width: 30em;
+            // border-radius: 50%;
+            height: 33em;
+            background-size: cover;
+            background-position: center;
+        }
+        .menu{
+            
+            .menu__heading{
+                display: flex;
+                justify-content:space-between;
+                margin-left: 0;
+                // width: 1112px;
+                width: 70em;
+                align-self: center;
+                .fa-heart{
+                    padding-right: 0;
+                }
+            }
+            display: flex;
+            flex-direction: column;
+            .menu__sub-title{
+                margin: 0;
+            }
+            .order__btn__container{
+                display: flex;
+                justify-content: center;
+                padding: 0;
+            }
+        }
+        .menu__orders{
+                display: flex;
+                justify-content: center;
+                padding-top: 4em;
+                .orders{
+                    margin: 0 1em 0 1em;
+                    .menu__cards{
+                        width: 350px;
+                    }
+                }
+
+        }
+        
+
+    }
+    footer{
+        display:flex;
+        justify-content: center;
+        gap:1em;
+        .logo-bis{
+            position: absolute;
+            left: 5em;
+        }
+        .footer__contact{
+            margin-left: 2em;
+        }
+    }
+}
+@media (min-width: 767px){
+    .header__items{
+        display: flex;
+        .fa-arrow-left{
+            display: flex;
+            align-self: flex-start;
+            font-size: 2em;
+        }
+    }
+    main{
+        .header__items{
+            display: flex;
+            justify-content: center;
+        }
+        .image{
+            height: 33em;
+            background-size: cover;
+            background-position: center;
+        }
+    }    
+    .menu{
+        padding: 0 10em;
+        .order__btn__container{
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+    }
+    footer{
+        margin-bottom: 18em;
+        display:flex;
+        justify-content: center;
+        gap:1em;
+        .logo-bis{
+            position: absolute;
+            left: 1.5em;
+        }
+        .footer__contact{
+            margin-left: 2em;
+        }
+    }
+}
