@@ -56,7 +56,7 @@ body,html{
 .header__items{
     display: flex;
     margin-top: 1em;
-    .header__logo__img{
+    .header__items__img{
         width: 40%;
         margin-bottom: 1em;   
     }
@@ -95,11 +95,16 @@ h2{
     margin-bottom: 0;
 }
 .menu{
+    display: flex;
+    justify-content: center;
     width:max-content, auto;
     padding: 0 1em;
     background-color: $fair;
     border-radius: 40px 40px 0 0;
     margin-top: -3.5em;
+    .menu__container{
+        max-width: 30em;
+    }
     .menu__heading{
         display: flex;
         align-items: center;
@@ -119,6 +124,7 @@ h2{
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
                 -webkit-text-stroke: 1px transparent;
+                cursor: pointer;
             }
     }
     .menu__sub-title{
@@ -282,7 +288,6 @@ footer{
             background-position: center;
         }
         .menu{
-            
             .menu__heading{
                 display: flex;
                 justify-content:space-between;
@@ -294,8 +299,6 @@ footer{
                     padding-right: 0;
                 }
             }
-            display: flex;
-            flex-direction: column;
             .menu__sub-title{
                 margin: 0;
             }
@@ -325,7 +328,6 @@ footer{
         justify-content: center;
         gap:1em;
         .logo-bis{
-            position: absolute;
             left: 5em;
         }
         .footer__contact{
@@ -336,8 +338,9 @@ footer{
 @media (min-width: 767px){
     .header__items{
         display: flex;
+        justify-content: center;
         .fa-arrow-left{
-            display: flex;
+            display: none;
             align-self: flex-start;
             font-size: 2em;
         }
@@ -362,12 +365,10 @@ footer{
         }
     }
     footer{
-        margin-bottom: 18em;
         display:flex;
         justify-content: center;
         gap:1em;
         .logo-bis{
-            position: absolute;
             left: 1.5em;
         }
         .footer__contact{

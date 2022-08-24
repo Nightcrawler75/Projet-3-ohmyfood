@@ -58,7 +58,7 @@ body, html {
   display: flex;
   margin-top: 1em;
 }
-.header__items .header__logo__img {
+.header__items .header__items__img {
   width: 40%;
   margin-bottom: 1em;
 }
@@ -97,11 +97,16 @@ h2 {
 }
 
 .menu {
+  display: flex;
+  justify-content: center;
   width: max-content, auto;
   padding: 0 1em;
   background-color: #F6F6F6;
   border-radius: 40px 40px 0 0;
   margin-top: -3.5em;
+}
+.menu .menu__container {
+  max-width: 30em;
 }
 .menu .menu__heading {
   display: flex;
@@ -123,6 +128,7 @@ h2 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px transparent;
+  cursor: pointer;
 }
 .menu .menu__sub-title {
   font-family: "Roboto";
@@ -267,10 +273,6 @@ footer .footer__contact p {
     background-size: cover;
     background-position: center;
   }
-  main .menu {
-    display: flex;
-    flex-direction: column;
-  }
   main .menu .menu__heading {
     display: flex;
     justify-content: space-between;
@@ -307,7 +309,6 @@ footer .footer__contact p {
     gap: 1em;
   }
   footer .logo-bis {
-    position: absolute;
     left: 5em;
   }
   footer .footer__contact {
@@ -317,9 +318,10 @@ footer .footer__contact p {
 @media (min-width: 767px) {
   .header__items {
     display: flex;
+    justify-content: center;
   }
   .header__items .fa-arrow-left {
-    display: flex;
+    display: none;
     align-self: flex-start;
     font-size: 2em;
   }
@@ -344,13 +346,11 @@ footer .footer__contact p {
   }
 
   footer {
-    margin-bottom: 18em;
     display: flex;
     justify-content: center;
     gap: 1em;
   }
   footer .logo-bis {
-    position: absolute;
     left: 1.5em;
   }
   footer .footer__contact {
