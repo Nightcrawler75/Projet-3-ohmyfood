@@ -5,6 +5,10 @@ body,html{
     margin: 0;
     font-family: $texte;
 }
+a{
+    color: unset;
+    text-decoration: none;
+}
 .loader{
     z-index: 999;
     animation: loader_fade 3s;
@@ -72,7 +76,7 @@ body,html{
     width:100%;
     height: 257px;
     background-image: url("../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
     &.m2{
         background-image: url("../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
@@ -103,7 +107,7 @@ h2{
     border-radius: 40px 40px 0 0;
     margin-top: -3.5em;
     .menu__container{
-        max-width: 30em;
+        max-width: 23em;
     }
     .menu__heading{
         display: flex;
@@ -288,40 +292,39 @@ footer{
             background-position: center;
         }
         .menu{
+            .menu__container{
+                max-width: none;
+                .menu__cards__container{  
+                    display: flex; 
+                    justify-content: center;
+                    gap: 1em;
+                    .menu__cards{
+                    width: 350px;
+                    }
+                    
+                    .menu__sub-title{
+                        margin: 0;
+                    }
+                }     
+            }
             .menu__heading{
+                margin-bottom: 2em;
                 display: flex;
                 justify-content:space-between;
                 margin-left: 0;
                 // width: 1112px;
-                width: 70em;
                 align-self: center;
                 .fa-heart{
-                    padding-right: 0;
+                padding: 0;
                 }
-            }
-            .menu__sub-title{
-                margin: 0;
-            }
+            }    
             .order__btn__container{
                 display: flex;
                 justify-content: center;
                 padding: 0;
             }
+               
         }
-        .menu__orders{
-                display: flex;
-                justify-content: center;
-                padding-top: 4em;
-                .orders{
-                    margin: 0 1em 0 1em;
-                    .menu__cards{
-                        width: 350px;
-                    }
-                }
-
-        }
-        
-
     }
     footer{
         display:flex;
@@ -334,7 +337,7 @@ footer{
             margin-left: 2em;
         }
     }
-}
+}    
 @media (min-width: 767px){
     .header__items{
         display: flex;

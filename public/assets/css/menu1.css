@@ -5,6 +5,11 @@ body, html {
   font-family: "Roboto";
 }
 
+a {
+  color: unset;
+  text-decoration: none;
+}
+
 .loader {
   z-index: 999;
   animation: loader_fade 3s;
@@ -74,7 +79,7 @@ body, html {
   width: 100%;
   height: 257px;
   background-image: url("../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .image.m2 {
@@ -106,7 +111,7 @@ h2 {
   margin-top: -3.5em;
 }
 .menu .menu__container {
-  max-width: 30em;
+  max-width: 23em;
 }
 .menu .menu__heading {
   display: flex;
@@ -273,34 +278,34 @@ footer .footer__contact p {
     background-size: cover;
     background-position: center;
   }
+  main .menu .menu__container {
+    max-width: none;
+  }
+  main .menu .menu__container .menu__cards__container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  main .menu .menu__container .menu__cards__container .menu__cards {
+    width: 350px;
+  }
+  main .menu .menu__container .menu__cards__container .menu__sub-title {
+    margin: 0;
+  }
   main .menu .menu__heading {
+    margin-bottom: 2em;
     display: flex;
     justify-content: space-between;
     margin-left: 0;
-    width: 70em;
     align-self: center;
   }
   main .menu .menu__heading .fa-heart {
-    padding-right: 0;
-  }
-  main .menu .menu__sub-title {
-    margin: 0;
+    padding: 0;
   }
   main .menu .order__btn__container {
     display: flex;
     justify-content: center;
     padding: 0;
-  }
-  main .menu__orders {
-    display: flex;
-    justify-content: center;
-    padding-top: 4em;
-  }
-  main .menu__orders .orders {
-    margin: 0 1em 0 1em;
-  }
-  main .menu__orders .orders .menu__cards {
-    width: 350px;
   }
 
   footer {
