@@ -61,10 +61,15 @@ a {
 }
 .header__items {
   display: flex;
+  justify-content: center;
   margin-top: 1em;
 }
+.header__items .header__items-arrow {
+  position: absolute;
+  left: 1em;
+}
 .header__items .header__items__img {
-  width: 40%;
+  width: 27vw;
   margin-bottom: 1em;
 }
 .header__items .fa-arrow-left {
@@ -102,9 +107,6 @@ h2 {
 }
 
 .menu {
-  display: flex;
-  justify-content: center;
-  width: max-content, auto;
   padding: 0 1em;
   background-color: #F6F6F6;
   border-radius: 40px 40px 0 0;
@@ -112,6 +114,7 @@ h2 {
 }
 .menu .menu__container {
   max-width: 23em;
+  margin: auto;
 }
 .menu .menu__heading {
   display: flex;
@@ -119,7 +122,7 @@ h2 {
 }
 .menu .menu__heading .fa-heart {
   display: flex;
-  padding: 0.5em 1.5em 0 0;
+  padding: 0.5em 1.5em 0em 0;
   font-size: x-large;
   justify-content: flex-end;
   flex-grow: 1;
@@ -140,7 +143,7 @@ h2 {
   font-weight: 200;
   border-bottom: solid #99E2D0;
   padding: 0 0 0.25em 0;
-  margin: 3em 19em 1em 0;
+  margin: 2em 20em 1em 0;
 }
 .menu .menu__cards {
   display: flex;
@@ -167,6 +170,9 @@ h2 {
 .menu .menu__cards .menu__cards__checked .fa-check-circle {
   color: #FFFFFF;
   transition: transform 0.5s;
+}
+.menu .menu__cards .menu__cards__container {
+  padding: 0 0 0 1em;
 }
 .menu .menu__cards .menu__cards__container__heading {
   margin: 0.5em 0 0 0.75em;
@@ -206,7 +212,9 @@ h2 {
   }
 }
 .menu .order__btn__container {
-  padding: 1em 0 1.5em 5em;
+  display: flex;
+  justify-content: center;
+  padding: 2em 0 4em 0;
 }
 .menu .order__btn__container .order__btn {
   width: 186px;

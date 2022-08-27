@@ -58,10 +58,15 @@ a{
     }
 }
 .header__items{
+    .header__items-arrow{
+        position: absolute;
+        left: 1em;
+    }
     display: flex;
+    justify-content: center;
     margin-top: 1em;
     .header__items__img{
-        width: 40%;
+        width: 27vw;
         margin-bottom: 1em;   
     }
     .fa-arrow-left{
@@ -99,22 +104,20 @@ h2{
     margin-bottom: 0;
 }
 .menu{
-    display: flex;
-    justify-content: center;
-    width:max-content, auto;
     padding: 0 1em;
     background-color: $fair;
     border-radius: 40px 40px 0 0;
     margin-top: -3.5em;
     .menu__container{
         max-width: 23em;
+        margin: auto;
     }
     .menu__heading{
         display: flex;
         align-items: center;
         .fa-heart{
             display: flex;
-            padding: 0.5em 1.5em 0 0;
+            padding: 0.5em 1.5em 0em 0;
             font-size: x-large;
             justify-content: flex-end;
             flex-grow: 1;
@@ -136,7 +139,7 @@ h2{
         font-weight: 200;
         border-bottom: solid $tertiaire;
         padding: 0 0 0.25em 0;
-        margin: 3em 19em 1em 0;
+        margin: 2em 20em 1em 0;
         
     }
     .menu__cards{
@@ -165,25 +168,28 @@ h2{
                 color:#FFFFFF;
                 transition: transform 0.5s;
             }
-        }   
-        .menu__cards__container__heading{
-            
-            margin:0.5em 0 0 0.75em;
-            line-height: 1.5em;
-            font-weight: 200;
-            overflow: hidden;
-            height: 58px;
-            text-overflow: ellipsis;
-            white-space: nowrap;
         }
-        .menu__cards__price{
-            flex-grow: 1;
-            text-align:end;
-            font-weight: bold;
-            padding: 2.20em 1.25em 0 0;
-        }
+        .menu__cards__container{  
+            padding: 0 0 0 1em;
+        } 
+            .menu__cards__container__heading{
+                
+                margin:0.5em 0 0 0.75em;
+                line-height: 1.5em;
+                font-weight: 200;
+                overflow: hidden;
+                height: 58px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .menu__cards__price{
+                flex-grow: 1;
+                text-align:end;
+                font-weight: bold;
+                padding: 2.20em 1.25em 0 0;
+            }
         
-    
+        
         p{
             margin: 0;
         }
@@ -214,7 +220,9 @@ h2{
     }
     
     .order__btn__container{
-        padding: 1em 0 1.5em 5em;
+        display: flex;
+        justify-content: center;
+        padding: 2em 0 4em 0;
         .order__btn{
             width: 186px;
             border-radius: 25em;
