@@ -66,7 +66,7 @@ a{
     justify-content: center;
     margin-top: 1em;
     .header__items__img{
-        width: 27vw;
+        width: 43vw;
         margin-bottom: 1em;   
     }
     .fa-arrow-left{
@@ -301,7 +301,7 @@ footer{
         }
         .menu{
             .menu__container{
-                max-width: none;
+                max-width: 68em;
                 .menu__cards__container{  
                     display: flex; 
                     justify-content: center;
@@ -368,7 +368,6 @@ footer{
         }
     }    
     .menu{
-        padding: 0 10em;
         .order__btn__container{
             display: flex;
             justify-content: center;

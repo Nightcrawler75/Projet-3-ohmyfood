@@ -69,7 +69,7 @@ a {
   left: 1em;
 }
 .header__items .header__items__img {
-  width: 27vw;
+  width: 43vw;
   margin-bottom: 1em;
 }
 .header__items .fa-arrow-left {
@@ -287,7 +287,7 @@ footer .footer__contact p {
     background-position: center;
   }
   main .menu .menu__container {
-    max-width: none;
+    max-width: 68em;
   }
   main .menu .menu__container .menu__cards__container {
     display: flex;
@@ -349,9 +349,6 @@ footer .footer__contact p {
     background-position: center;
   }
 
-  .menu {
-    padding: 0 10em;
-  }
   .menu .order__btn__container {
     display: flex;
     justify-content: center;

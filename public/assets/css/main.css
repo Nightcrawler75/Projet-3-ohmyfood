@@ -86,7 +86,7 @@ header .header__sub-search .header__btn-container {
 }
 
 .header__logo {
-  height: 1.75em;
+  width: 43vw;
   margin: 0.5em 0;
 }
 
@@ -331,11 +331,15 @@ footer .footer__contact p {
   header {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   header .header__logo {
     height: 100px;
     padding: 0;
     margin: 3em 0 3em 0;
+  }
+  header .header__sub-search {
+    width: 100%;
   }
   header .header__search-bar {
     width: 325px;
@@ -397,11 +401,15 @@ footer .footer__contact p {
   header {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   header .header__logo {
     height: 100px;
     padding: 0;
     margin: 3em 0 3em 0;
+  }
+  header .header__sub-search {
+    width: 100%;
   }
   header .header__search-bar {
     width: 325px;
@@ -462,7 +470,6 @@ footer .footer__contact p {
   }
 
   footer {
-    margin-bottom: 18em;
     display: flex;
     justify-content: center;
     gap: 1em;
